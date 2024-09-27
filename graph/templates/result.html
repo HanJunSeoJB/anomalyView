@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSV Processing Result</title>
+    <style>
+      table {
+        width: auto;
+        border-collapse: collapse;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSV Column Names</h1>
+    <form method="post" action="/process">
+      <div>{{ table|safe }}</div>
+      <input type="submit" value="Show">
+    </form>
+    <a href="/">Go Back</a>
+  </body>
+</html>
